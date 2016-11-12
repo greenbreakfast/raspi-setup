@@ -1,5 +1,6 @@
 # Setting Up Autostart
 
+Setup Autostart utility to perform specific commands at boottime.
 
 
 ## Opening a Browser to a Webpage on Boot
@@ -31,7 +32,7 @@ With:
 
 #@point-rpi
 
-# Launch the browser in full screen 
+# Launch the browser in full screen
 # clear out any errors from unclean exit
 @sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium/Default/Preferences
 @chromium-browser --noerrdialogs --kiosk <URL TO DISPLAY>
